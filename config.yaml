@@ -1,0 +1,17 @@
+name: SDM630 Emulator
+version: "1.0"
+slug: sdm630-emulator
+description: Emuliert ein Eastron SDM630 über MQTT-Daten für Deye WR
+arch:
+  - aarch64
+  - amd64
+startup: services
+boot: auto
+options:
+  mqtt_broker: "core-mosquitto"
+  mqtt_topic_grid: "homeassistant/sensor/go_econtroller_910332_grid_power/state"
+  modbus_port: 5020
+schema:
+  mqtt_broker: str
+  mqtt_topic_grid: str
+  modbus_port: int

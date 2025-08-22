@@ -1,0 +1,8 @@
+{
+  "name": "sdm630-emulator",
+  "url": "https://github.com/tlrt2701/sdm630",
+  "maintainer": "Thorsten",
+  "addons": [
+    "sdm630-emulator"
+  ]
+}
